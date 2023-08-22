@@ -51,11 +51,11 @@ This will start both the FastAPI backend and the Node.js frontend server. The ba
 
 ## Running Tests
 
-You can run the tests for both the backend and frontend using the provided Makefile. From the root directory of the project, run the following command:
+You can run the tests for the backend using the provided Makefile. From the root directory of the project, run the following command:
 
 bashCopy code
 
-`make test` 
+`make tests` 
 
 This will execute the test scripts defined for both the backend and frontend. Make sure that the necessary testing frameworks and dependencies are installed for both parts of the project.
 
