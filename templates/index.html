@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Word Count Challenge</title>
+    <style>
+        body {
+            text-align: center;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            margin: 0;
+        }
+        form {
+            display: inline-block;
+            text-align: left;
+        }
+    </style>
+</head>
+<body>
+    <form action="/" method="post">
+        <textarea name="text" rows="10" cols="50"></textarea><br>
+        <input type="submit" value="Count Words">
+    </form>
+    {% if error %}
+        <p style="color:red;">{{ error }}</p>
+    {% elif word_count %}
+        <p>Word Count: {{ word_count }}</p>
+    {% endif %}
+</body>
+</html>
