@@ -1,14 +1,13 @@
 import re
 
-from fastapi import FastAPI
+from fastapi import APIRouter
 
-from app import app
-from body import WordBody
+from backend.app.internal.body import WordBody
 
-app = FastAPI()
+router = APIRouter()
 
 
-@app.post("/words/count")
+@router.post("/words/count")
 def count_words(body: WordBody):
     word_count = len(re.findall(r"\w+", body.text))
 
