@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Word Count Challenge</title>
+    <script src="script.js"></script>
+</head>
+
+<body>
+    <div style="text-align:center;">
+        <h1>Word counter</h1>
+        <textarea id="text" rows="10" cols="50"></textarea><br>
+        <br>
+        <button class="simpleButton" onclick="countWords()">Count Words</button>
+        <p id="result"></p>
+        <p id="error" style="color:red;"></p>
+        <br>
+        <p>Made By: Vinicius Taborda</p>
+    </div>
+</body>
+
+<style>
+    body {
+        font-family: Arial;
+        background-color: whitesmoke;
+    }
+
+    .simpleButton {
+        display: inline-block;
+        outline: none;
+        cursor: pointer;
+        font-weight: 600;
+        border-radius: 3px;
+        padding: 12px 24px;
+        border: 0;
+        color: #fff;
+        background: #000a47;
+        line-height: 1.15;
+        font-size: 16px;
+    }
+
+    .simpleButton:hover {
+        transition: all .1s ease;
+        box-shadow: 0 0 0 0 #fff, 0 0 0 3px #1de9b6;
+    }
+</style>
+
+</html>
