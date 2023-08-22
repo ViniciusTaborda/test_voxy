@@ -48,6 +48,17 @@ bashCopy code
 
 This will start both the FastAPI backend and the Node.js frontend server. The backend will be accessible at `http://localhost:8000`, and the frontend will be accessible at `http://localhost:3000`.
 
+
+## Running Tests
+
+You can run the tests for both the backend and frontend using the provided Makefile. From the root directory of the project, run the following command:
+
+bashCopy code
+
+`make test` 
+
+This will execute the test scripts defined for both the backend and frontend. Make sure that the necessary testing frameworks and dependencies are installed for both parts of the project.
+
 ## Usage
 
 Open your web browser and navigate to `http://localhost:3000`. You will see a text area where you can input the text you want to count the words of. Click the "Count Words" button to see the word count.
