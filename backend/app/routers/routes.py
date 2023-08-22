@@ -1,7 +1,7 @@
 from fastapi import APIRouter
-from internal.word_count import word_count_regex
+from app.internal.word_count import word_count_regex
 
-from backend.app.internal.body import WordBody
+from app.internal.body import WordBody
 
 router = APIRouter()
 
